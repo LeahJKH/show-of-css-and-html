@@ -1,0 +1,128 @@
+/*all item css*/
+* {
+  margin: 0;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  text-align: center;
+
+  font-size: 70%;
+  color: #e9e9e9;
+  letter-spacing: 1.5px;
+}
+/*end of all item css*/
+
+/*element changer css*/
+body {
+  background-color: #424242;
+  width: 100%;
+  height: 200%;
+}
+h1 {
+  font-size: 2rem;
+}
+img {
+  width: 200px;
+  height: 250px;
+}
+a {
+  color: #e9e9e9;
+  transition: color 3s 0s;
+  text-decoration: none;
+  flex-direction: column;
+}
+button {
+  font-size: 3rem;
+  color: #e9e9e9;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  height: fit-content;
+  width: fit-content;
+  border-left: 2px solid #000;
+  border-right: 2px solid #000;
+  margin: auto 1em;
+  border-radius: 10%;
+  transition: all 1s 0;
+}
+
+a:hover {
+  color: #b603fb;
+}
+header {
+  margin: 0 auto;
+  border-bottom: 1px black solid;
+  box-shadow: black 0 0 80px;
+  height: 400px;
+  width: 80%;
+  display: flex;
+  background-image: url(../images/mtn-bg.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+footer {
+  height: 200px;
+  width: 100%;
+  background-color: #424242;
+  border-top: 1px black solid;
+  box-shadow: 0px 0 20px black;
+  font-size: 3rem;
+}
+/*end of element changer css*/
+
+/*index css*/
+#siteName {
+  color: #b603fb;
+  font-size: 6rem;
+  margin: auto 10px;
+  text-shadow: #e9e9e9 -1px 2px 2px;
+}
+
+.card {
+  background-color: #595757;
+  min-height: 200px;
+  min-width: 300px;
+  padding: 2rem;
+  font-size: 3rem;
+  margin: 10px auto;
+  border-radius: 1em;
+  inline-size: 400px;
+  overflow-wrap: break-word;
+}
+.card > h1 {
+  font-size: 1em;
+  text-decoration: underline;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.cardPos {
+  justify-content: space-around;
+  display: flex;
+  flex-direction: row;
+}
+/*end of index css*/
+
+/*mutiple use css*/
+.row {
+  display: flex;
+  flex-direction: row;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+  flex-flow: row wrap;
+}
+.center {
+  justify-content: center;
+  text-align: center;
+}
+/*end of multiple use css*/
+
+.dropdown {
+  height: 20px;
+  width: 20px;
+}
+.dropdown:hover {
+  height: 200px;
+  width: 200px;
+}

@@ -1,0 +1,97 @@
+/*all item css*/
+* {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-align: center;
+  font-size: 70%;
+  color: #e9e9e9;
+  letter-spacing: 1.5px;
+}
+/*end of all item css*/
+
+/*element changer css*/
+body {
+  background-color: #424242;
+  width: 100%;
+  height: 200%;
+}
+p,
+h3 {
+  font-size: 2rem;
+}
+pre {
+  font-size: 2rem;
+  font-style: italic;
+  color: aqua;
+}
+h1 {
+  font-size: 7rem;
+}
+h2 {
+  font-size: 5rem;
+}
+a {
+  text-decoration: none;
+}
+button {
+  background-color: #8d086a;
+  width: 13rem;
+  height: 6rem;
+  font-size: 3rem;
+  margin: auto 10px;
+}
+input {
+  color: #000;
+}
+br {
+  background-color: #252424;
+}
+header {
+  width: 100%;
+  height: 100px;
+  background-color: #252424;
+}
+footer {
+  background-color: #252424;
+  width: 100%;
+  height: 50px;
+}
+/*end of element changer css*/
+
+/*code showcase css*/
+.snippetcard {
+  min-width: 150px;
+  min-height: 20px;
+  background-color: #252424;
+  color: #e9e9e9;
+  display: flex;
+  flex-direction: column;
+  font-size: 4.5em;
+  margin: 10px 10px;
+  padding: 15px 10px;
+  inline-size: 250px;
+  overflow-wrap: break-word;
+  box-shadow: #000 0 0 10px;
+  flex-grow: 4;
+}
+/*end of code showcase css*/
+
+/*mutiple use css*/
+.row {
+  display: flex;
+  flex-direction: row;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+  flex-flow: row wrap;
+}
+.center {
+  justify-content: center;
+  text-align: center;
+}
+
+/*end of multiple use css*/

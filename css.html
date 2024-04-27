@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css showcase</title>
+    <link rel="stylesheet" href="./css/showcase.css" />
+  </head>
+  <body>
+    <header class="row center">
+      <h1>CSS</h1>
+      <button><a href="./index.html">homepage</a></button>
+      <button><a href="./html.html">HTML</a></button>
+    </header>
+
+    <br />
+    <h2>Basics</h2>
+    <br />
+
+    <div class="row flex-wrap">
+      <div class="snippetcard">
+        <p>{}</p>
+        <p>the curly bracets are used too put your css inbetween.</p>
+        <p>an example is .class {(css goes here)}</p>
+      </div>
+
+      <div class="snippetcard">
+        <p>class, id, content</p>
+        <p>putting a class item in css should always start with "." then the class name</p>
+        <p>putting a id item in css should always start with "#" then the id name</p>
+        <p>you can paste base elements and change them for example p {}</p>
+        <p>they would look like this</p>
+        <pre>
+.class {
+  (css)
+}
+#id {
+  (css)
+}
+(html tag) {
+  (css)
+}
+      </pre
+        >
+        <p>
+          the class name doesnt matter same with id but it needs too be written exactly the same as
+          in the html file. its also recomended too name it something so its easily findable in the
+          css file, so something that relates too its function
+        </p>
+      </div>
+
+      <div class="snippetcard">
+        <p>*</p>
+        <p>this is an all tag. it will affect all the elements in your html</p>
+      </div>
+
+      <div class="snippetcard">
+        <p>the diffrent messurments</p>
+        <p>you have px, %, auto, null, 0, none, rem, em, ch,</p>
+
+        <p>px is the pixels 1px is only one pixel</p>
+        <p>
+          % is a prosantage of a thing. if you use 80% on width you will use 80% of the page size or
+          if you use it on text you will use 80% of the text-font-size for your site
+        </p>
+        <p>
+          auto will make it try too take everything and try too center it. its a better 100% for
+          width and so on
+        </p>
+        <p>
+          null, 0 and none. all of these is the same just diffrents ways of writing it it basicly
+          means nothing. so if used on margin it would be no margin
+        </p>
+        <p>Rem goes too the root number</p>
+        <p>em</p>
+        <p>ch this is one character lenght</p>
+      </div>
+    </div>
+
+    <br />
+    <h2>important stuff</h2>
+    <br />
+    <div class="row flex-wrap">
+      <div class="snippetcard">
+        <p>color:</p>
+        <p>this will change the text color. the colors are in hex codes</p>
+      </div>
+
+      <div class="snippetcard">
+        <p>background-color:</p>
+        <p>
+          this will change the color behind your item and if put in the body in css it will change
+          the whole site color
+        </p>
+      </div>
+      <!--add better description ^-->
+      <div class="snippetcard">
+        <p>height:, width:</p>
+        <p>these are used too determin the height and width of the item</p>
+      </div>
+
+      <div class="snippetcard">
+        <p>margin:</p>
+        <p>
+          margin creates a space outside of the item. margin can also be added a spesific side.
+          -left, -right, -top, -bottom. if you write margin-top: you would only change the top
+          margin
+        </p>
+        <p>you can also use shorthands like:</p>
+        <p>margin: 10px(all axis);</p>
+        <p>margin: 10px(top and bottom) 5px(left and right); margin: 10px(top)</p>
+        <p>15px(right) 5px(bottom) 0px(left);</p>
+      </div>
+      <div class="snippetcard">
+        <p>padding</p>
+        <p>
+          padding does the same as margin just inside the element and its shorthands and full form
+          is the same
+        </p>
+      </div>
+
+      <div class="snippetcard">
+        <p>font-size:</p>
+        <p>font size will change the size of the font</p>
+      </div>
+      <div class="snippetcard">
+        <p>letter-spacing:</p>
+        <p>this will space the letters. 1.5px makes it more readable</p>
+      </div>
+      <div class="snippetcard">
+        <p>display:</p>
+        <p>flex</p>
+        <p>block</p>
+        <p>inline</p>
+      </div>
+      <!--add better description ^-->
+    </div>
+
+    <br />
+    <h2>flex-box</h2>
+    <br />
+    <div class="row flex-wrap">
+      <div class="snippetcard">
+        <p>flex-direction:</p>
+        <p>you can give flex direction</p>
+        <p>row, column, reverse row and reverse column</p>
+      </div>
+
+      <div class="snippetcard">
+        <p>row</p>
+        <p>
+          this will put your items from left too right and reverse will do it from right too left.
+          this is also flexbox initial value
+        </p>
+      </div>
+
+      <div class="snippetcard">
+        <p>column</p>
+        <p>this will order it up too down and reversse will do the opisite</p>
+      </div>
+
+      <div class="snippetcard">
+        <p>flex-grow:</p>
+        <p>
+          this will grow the items so the can stack depending on the number. giving four it will
+          grow the items so you have four until it goes down and does it again
+        </p>
+      </div>
+
+      <div class="snippetcard">
+        <p>flex-shrink</p>
+        <p>
+          this will shrink the items so the can stack depending on the number. giving four it will
+          shrink the items so you have four until it goes down and does it again on the next line
+        </p>
+      </div>
+
+      <div class="snippetcard">
+        <p>align items</p>
+        <p>
+          this will change it based on its cross-axis. if you change too column it will become
+          main-axis
+        </p>
+        <p>the diffrent values you can give is</p>
+        <p>flex-start, flex-end, center, stretch, space around and space between</p>
+      </div>
+
+      <div class="snippetcard">
+        <p>justify content</p>
+        <p>
+          this will change it based on its main-axis. if you change too column it will become
+          cross-axis
+        </p>
+        <p>the diffrent values you can give is</p>
+        <p>flex-start, flex-end, center, stretch, space around and space between</p>
+      </div>
+    </div>
+
+    <footer>
+      <h3>this might not be the best but this is what i know</h3>
+    </footer>
+  </body>
+</html>
