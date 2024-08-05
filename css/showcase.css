@@ -85,7 +85,7 @@ footer {
   display: flex;
   flex-direction: column;
 }
-.flex-wrap {
+.row-wrap {
   flex-wrap: wrap;
   flex-flow: row wrap;
 }
