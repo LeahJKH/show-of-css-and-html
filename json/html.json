@@ -24,7 +24,8 @@
             },
             {
                 "title": "<style>",
-                "desc": "this tag adds css directly in your html file. it can be used inside the head or inside another tag."
+                "desc": "this tag adds css directly in your html file. it can be used inside the head or inside another tag.",
+                "code": "<style> \nselector {\n background-color: #fff\n}"
             },
             {
                 "title": "<script>",

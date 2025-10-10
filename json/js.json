@@ -4,7 +4,18 @@
         "items": [
             {
                 "title": "string",
-                "desc": "a string is a value wrapped in \"\" that can contain any character. Eg 1-9, a-z and some symbols"
+                "desc": "a string is a value wrapped in \"\" that can contain any character. Eg 1-9, a-z and some symbols",
+                "code": "const exampleString = \"Hai im a string\""
+            },
+            {
+                "title": "number",
+                "desc": "a number is exactly what u think it is, its just a number. do not write any symbols or it will stop being a number",
+                "code": "const exampleNumber = 437"
+            },
+            {
+                "title": "boolean",
+                "desc": "a boolean or bool is used too tell if something is true or false",
+                "code": "const exampleboolean = true"
             }
         ]
     },
@@ -13,7 +24,19 @@
         "items": [
             {
                 "title": "const",
-                "desc": "const tells the Javascript this file will never be changed"
+                "desc": "const tells the Javascript this variable will never be changed",
+                "code": "const variableName"
+            },
+              {
+                "title": "let",
+                "desc": "let tells the Javascript this variable will change",
+                "code": "let variableName"
+            },
+              {
+                "title": "var",
+                "desc": "var tells the Javascript this is a variable without any spesific rules too it",
+                "example": "!NOTE!: this is deprecated and shouldnt be used if you are too declare then use let or const",
+                "code": "var variableName"
             }
         ]
     },

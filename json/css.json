@@ -9,11 +9,12 @@
             },
             {
                 "title": ".",
-                "desc": "this is too declare too the sheet (css file) that this is an class."
+                "desc": "this is too declare too the sheet (css file) that this is a class."
             },
             {
                 "title": "{ and }",
-                "desc": "curley braces are for opening a styling into a tag, class, id or any type of selector"
+                "desc": "curley braces are for opening a styling into a tag, class, id or any type of selector",
+                "code": "selector { \n type of styling: style \n}"
             }
         ]
     },
@@ -21,8 +22,14 @@
         "header": "color models",
         "items": [
             {
-                "title": "rgb",
-                "desc": "rgb is a color model based on red, green and blue. it is written in code as rgb(0,0,0)"
+                "title": "rgba",
+                "desc": "rgb is a color model based on red, green and blue.",
+                "code": "rgb(0,0,0)"
+            },
+            {
+                "title": "rgba",
+                "desc": "rgba is a color model based on red, green, blue and alpha. alpha is just the opacity of the color",
+                "code": "rgba(0,0,0,1)"
             }
         ]
     },
@@ -32,6 +39,24 @@
             {
                 "title": "background-color:",
                 "desc": "when background color is used on a selector it will then style the whole background of that selector"
+            },
+            {
+                "title": "color:",
+                "desc": "when  color is used on a selector it will then style the text in both children of the selected selector and the selector itself"
+            }
+
+        ]
+    },
+     {
+        "header": "flexbox",
+        "items": [
+            {
+                "title": "display: flex",
+                "desc": "this is what gives the selector flexbox properties. you will always need this when u want a selector too have flexbox properties"
+            },
+            {
+                "title": "flex-direction",
+                "desc": "flex direction is used too decide if the selector will place the objects horisontally with row, and vertically with column"
             }
 
         ]
