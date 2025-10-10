@@ -48,6 +48,7 @@ function startBuild(fullItems) {
             }
 
             // Append the div to the container
+            console.log(contentDiv)
             contentDiv.appendChild(div)
         });
     });
