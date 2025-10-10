@@ -1,6 +1,6 @@
 const infoContainer = document.querySelector("#main-info-cont")
 
-const fullItems = [ 
+const fullItems = [
     {
         header: "Basics",
         items: [
@@ -198,7 +198,7 @@ function startBuild() {
             // Create a div for each item
             const div = document.createElement("div");
             div.classList.add("snippetcard");
-            
+
 
             // Create and append the title
             const h2ETxt = document.createTextNode(item.title);
@@ -213,7 +213,7 @@ function startBuild() {
             // Append title and description to the div
             div.appendChild(h2E);
             div.appendChild(p);
-            
+
             // Append code or example if they exist
             if (item.code) {
                 const pre = document.createElement("pre");

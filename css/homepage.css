@@ -1,0 +1,15 @@
+main {
+  padding: 40px 20px;
+}
+
+h2 {
+  color: var(--Purple-Light);
+  margin-bottom: 15px;
+}
+.card {
+    width: 80%;
+}
+#intro-txt {
+  font-size: 18px;
+  max-width: 700px;
+}
