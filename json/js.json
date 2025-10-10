@@ -1,0 +1,31 @@
+[
+    {
+        "header": "types",
+        "items": [
+            {
+                "title": "string",
+                "desc": "a string is a value wrapped in \"\" that can contain any character. Eg 1-9, a-z and some symbols"
+            }
+        ]
+    },
+    {
+        "header": "declaring",
+        "items": [
+            {
+                "title": "const",
+                "desc": "const tells the Javascript this file will never be changed"
+            }
+        ]
+    },
+    {
+        "header": "methods",
+        "items": [
+            {
+                "title": "to be created",
+                "desc": "?"
+            }
+
+        ]
+    }
+
+]

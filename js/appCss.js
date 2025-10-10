@@ -1,46 +1,6 @@
 const infoContainer = document.querySelector("#main-info-cont")
 
-const fullItems = [
-    {
-        header: "Basics",
-        items: [
-            {
-                title: "#",
-                desc: "this is too declare too the sheet (css file) that this is an id.",
-                example: "#(id name) {}"
-            },
-            {
-                title: ".",
-                desc: "this is too declare too the sheet (css file) that this is an class."
-            },
-            {
-                title: "{ and }",
-                desc: "curley braces are for opening a styling into a tag, class, id or any type of selector"
-            }
-        ]
-    },
-    {
-        header: "color models",
-        items: [
-            {
-                title: "rgb",
-                desc: "rgb is a color model based on red, green and blue. it is written in code as rgb(0,0,0)"
-            }
-        ]
-    },
-    {
-        header: "color styling",
-        items: [
-            {
-                title: "background-color:",
-                desc: "when background color is used on a selector it will then style the whole background of that selector"
-            },
-
-        ]
-    },
-
-]
-function startBuild() {
+function startBuild(fullItems) {
     fullItems.forEach(section => {
         // Create and append the header for each section
         const header = document.createTextNode(section.header);
@@ -91,4 +51,10 @@ function startBuild() {
         });
     });
 }
-startBuild();
+async function JsonGetter(path) {
+    let file = await fetch(path)
+    let res = await file.json()
+    console.log(res)
+    startBuild(res);
+}
+JsonGetter("../json/css.json")

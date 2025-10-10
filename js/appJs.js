@@ -1,37 +1,7 @@
 const infoContainer = document.querySelector("#main-info-cont")
 
-const fullItems = [
-    {
-        header: "types",
-        items: [
-            {
-                title: "string",
-                desc: `a string is a value wrapped in "" that can contain any character of the ascii tabel`
-            }
-        ]
-    },
-    {
-        header: "declaring",
-        items: [
-            {
-                title: "const",
-                desc: "const tells the Javascript this file will never be changed"
-            }
-        ]
-    },
-    {
-        header: "methods",
-        items: [
-            {
-                title: "to be created",
-                desc: "?"
-            },
 
-        ]
-    },
-
-]
-function startBuild() {
+function startBuild(fullItems) {
     fullItems.forEach(section => {
         // Create and append the header for each section
         const header = document.createTextNode(section.header);
@@ -82,4 +52,10 @@ function startBuild() {
         });
     });
 }
-startBuild();
+async function JsonGetter(path) {
+    let file = await fetch(path)
+    let res = await file.json()
+    console.log(res)
+    startBuild(res);
+}
+JsonGetter("../json/js.json")
