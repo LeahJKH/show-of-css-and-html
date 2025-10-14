@@ -16,7 +16,13 @@
                 "title": "boolean",
                 "desc": "a boolean or bool is used too tell if something is true or false",
                 "code": "const exampleboolean = true"
-            }
+            },
+              {
+                "title": "String litteral",
+                "desc": "a string litteral is very alike a string but it has one more feature. an abilty too put in variables",
+                "code": "const examplestring = \"heloo\" \nconst stringlitteral = `this can have a variable like this: ${examplestring}"
+              }
+
         ]
     },
     {
